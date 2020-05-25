@@ -14,16 +14,15 @@ def countingValleys(n, s):
     # print(valley)
 
     # or
-
     
-    level=valley=0
+    altitude=valley=0
     for i in range(n):
         if(s[i]=='U'):
-            level+=1
-            if(level==0):
+            altitude+=1
+            if(altitude==0):
                 valley+=1
         else:
-            level-=1    
+            altitude-=1    
     print(valley)
 
 n = int(input())
